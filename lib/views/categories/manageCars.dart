@@ -153,7 +153,7 @@ class _manageCarsState extends State<manageCars> {
                                   headerStyle: HeaderStyle(
                                     formatButtonTextStyle: const TextStyle().copyWith(color: Colors.white, fontSize: 15.0),
                                     formatButtonDecoration: BoxDecoration(
-                                      color: Theme.of(context).accentColor,
+                                      color: Colors.red,
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                   ),

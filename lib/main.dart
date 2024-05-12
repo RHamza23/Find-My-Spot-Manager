@@ -6,10 +6,12 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:inparkmanager/views/splash_Screens/SplashScreen.dart';
 
 import 'controller/Repositories/authentication_repository.dart';
-import 'firebase_options.dart';
+import 'firebase_options_old.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(
+    name: 'find-my-spot-manager',
+    options: DefaultFirebaseOptions.currentPlatform);
   WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
