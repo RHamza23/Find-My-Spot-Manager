@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/controller/requestController.dart';
+import 'package:FindMySpot/controller/requestController.dart';
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../model/requestsVehicleModel.dart';
@@ -100,7 +100,8 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                               horizontal: 30),
                                           child: InkWell(
                                             child: Image.asset(
-                                                requestsVehicleListView),
+                                                requestsVehicleListView,
+                                                color: PrimaryColor,),
                                           ),
                                         ),
                                         Padding(
@@ -113,6 +114,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   'Existing'.toUpperCase(),
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 12,
                                                   ),
@@ -124,6 +126,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].existingVehicle}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 25,
                                                   ),
@@ -135,6 +138,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   'Current'.toUpperCase(),
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 12,
                                                   ),
@@ -146,6 +150,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "  ${snapshot.data![index].ownerVehicleNo}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 25,
                                                   ),
@@ -164,6 +169,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].ownerName}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 15,
                                                   ),
@@ -178,6 +184,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].ownerCnic}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 15,
                                                   ),
@@ -226,7 +233,9 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                               horizontal: 30),
                                           child: InkWell(
                                             child: Image.asset(
-                                                requestsVehicleListView),
+                                                requestsVehicleListView,
+                                                    color: PrimaryColor,
+                                                ),
                                           ),
                                         ),
                                         Padding(
@@ -239,6 +248,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   'Existing'.toUpperCase(),
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 12,
                                                   ),
@@ -250,6 +260,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].existingVehicle}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 25,
                                                   ),
@@ -261,6 +272,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   'Current'.toUpperCase(),
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 12,
                                                   ),
@@ -272,6 +284,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].ownerVehicleNo}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 25,
                                                   ),
@@ -290,6 +303,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].ownerName}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 15,
                                                   ),
@@ -304,6 +318,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].ownerCnic}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 15,
                                                   ),
@@ -354,7 +369,8 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                               horizontal: 30),
                                           child: InkWell(
                                             child: Image.asset(
-                                                requestsVehicleListView),
+                                                requestsVehicleListView,
+                                                color: PrimaryColor,),
                                           ),
                                         ),
                                         Padding(
@@ -367,6 +383,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   'Existing'.toUpperCase(),
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 12,
                                                   ),
@@ -378,6 +395,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].existingVehicle}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 25,
                                                   ),
@@ -389,6 +407,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   'Current'.toUpperCase(),
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 12,
                                                   ),
@@ -400,6 +419,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "  ${snapshot.data![index].ownerVehicleNo}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 25,
                                                   ),
@@ -418,6 +438,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].ownerName}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 15,
                                                   ),
@@ -432,6 +453,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
                                                 child: Text(
                                                   "${snapshot.data![index].ownerCnic}",
                                                   style: const TextStyle(
+                                                    color: Colors.white,
                                                     fontFamily: 'Roboto',
                                                     fontSize: 15,
                                                   ),

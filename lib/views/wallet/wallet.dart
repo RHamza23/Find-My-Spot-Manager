@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inparkmanager/constants/colors.dart';
+import 'package:FindMySpot/constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
 import '../../controller/profileController.dart';
@@ -137,7 +137,7 @@ class _walletState extends State<wallet> {
                                             style: const TextStyle(
                                               fontFamily: 'Roboto',
                                               fontSize: 25,
-                                              color: Colors.black,
+                                              color: Colors.white,
                                               letterSpacing: 2,
                                               fontWeight: FontWeight.w700,
                                               height: 0.625,
@@ -165,19 +165,20 @@ class _walletState extends State<wallet> {
                                 ),
                                 SizedBox(
                                     height: 30,
-                                    width: 100,
+                                    width: 120,
                                     child: ElevatedButton(
                                         onPressed: () {
                                           Get.to(const withdrawMoney());
                                         },
-                                        child:  Text(
-                                          withdraw.toUpperCase(),
-                                          style:
-                                          const TextStyle(color: Colors.black),
-                                        ),
                                     style: ElevatedButton.styleFrom(
                                       backgroundColor: Colors.white
                                     ),
+                                        child:   Text(
+                                          withdraw.toUpperCase(),
+                                          textAlign: TextAlign.center,
+                                          style:
+                                          const  TextStyle(color: Colors.black),
+                                        ),
                                     )
                                 ),
                               ],

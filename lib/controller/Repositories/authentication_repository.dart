@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/controller/dashboardController.dart';
-import 'package:inparkmanager/views/categories/categories.dart';
+import 'package:FindMySpot/controller/dashboardController.dart';
+import 'package:FindMySpot/views/categories/categories.dart';
 
 import '../../views/Dashboard/dashboard.dart';
 import '../../views/welcomeScreen/welcomeScreen.dart';

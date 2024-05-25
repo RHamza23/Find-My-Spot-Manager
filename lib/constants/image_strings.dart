@@ -16,7 +16,7 @@ const String SignInCurve = "assets/images/userManagment/signInCurve.png";
 const String bikeImage = "assets/images/userManagment/bike.png";
 
 // Dashboard
-const String dashboardBackground = "assets/images/dashboard/dashboardBackground.png";
+const String dashboardBackground = "assets/images/dashboard/dashboardBackground.jpg";
 const String orderScannerButton = "assets/images/dashboard/orderCardButton.svg";
 
 // Icons Paths
@@ -29,9 +29,9 @@ const String walletIcon = "assets/images/icons/wallet.svg";
 
 
 // deposit screen button
-const String creditDepitButton = "assets/images/buttons/deposit/creditDebitButton.png";
-const String easypaisaButton = "assets/images/buttons/deposit/easypaisaButton.png";
-const String jazzcashButton = "assets/images/buttons/deposit/jazzcashButton.png";
+const String creditDepitButton = "assets/images/buttons/deposit/creditDebitButton.jpg";
+const String easypaisaButton = "assets/images/buttons/deposit/easypaisaButton.jpg";
+const String jazzcashButton = "assets/images/buttons/deposit/jazzcashButton.jpg";
 
 //Order Card
 const String topCurve  = "assets/images/categories/topCurve.png";
@@ -47,18 +47,18 @@ const String parkingDetailCard  = "assets/images/dashboard/parkinDetailCard.svg"
 //categories
 const String whiteBackground  = "assets/images/categories/commonWhiteBackground.png";
 const String blueBackground  = "assets/images/categories/commonYellowBackground.png";
-const String bikeButton  = "assets/images/categories/bikeCategoryButton.png";
-const String carButton  = "assets/images/categories/carCategoryButton.png";
+const String bikeButton  = "assets/images/categories/bikeCategoryButton.jpg";
+const String carButton  = "assets/images/categories/carCategoryButton.jpg";
 
 // Manage Car
 const String filterButton  = "assets/images/manageVehicles/filterButton.png";
 const String manageVehiclelistView  = "assets/images/manageVehicles/manageVehicleListView.png";
 
 // Settings
-const String acceptRequestButton  = "assets/images/Profile/acceptRequestButton.png";
-const String editProfileButton  = "assets/images/Profile/editProfileButton.png";
-const String feesUpdateButton  = "assets/images/Profile/feesUpdateButton.png";
-const String logoutButton  = "assets/images/Profile/logoutButton.png";
+const String acceptRequestButton  = "assets/images/Profile/acceptRequestButton.jpg";
+const String editProfileButton  = "assets/images/Profile/editProfileButton.jpg";
+const String feesUpdateButton  = "assets/images/Profile/feesUpdateButton.jpg";
+const String logoutButton  = "assets/images/Profile/logoutButton.jpg";
 
 //request vehicle
 const String requestsVehicleListView  = "assets/images/requests/requestsVehicleListView.png";

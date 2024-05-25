@@ -1,4 +1,4 @@
-package com.example.inparkmanager
+package com.example.FindMySpot
 
 import io.flutter.embedding.android.FlutterActivity
 

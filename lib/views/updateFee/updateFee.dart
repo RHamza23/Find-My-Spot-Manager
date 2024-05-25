@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inparkmanager/model/updateFeeModel.dart';
-import 'package:inparkmanager/utils/Regex/regex.dart';
+import 'package:FindMySpot/model/updateFeeModel.dart';
+import 'package:FindMySpot/utils/Regex/regex.dart';
 
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
@@ -76,6 +76,7 @@ class _updateFeeState extends State<updateFee> {
               alignment: Alignment.topRight,
               child: Image.asset(
                 requestFormCurves,
+                color: PrimaryColor,
                 height: 150,
                 width: 150,
               ),

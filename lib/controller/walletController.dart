@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/controller/sighnUpController.dart';
+import 'package:FindMySpot/controller/sighnUpController.dart';
 
 import '../constants/colors.dart';
 import '../model/orderScannerModel.dart';

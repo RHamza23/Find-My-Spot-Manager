@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.inparkmanager">
+    package="com.example.FindMySpot">
    <application
-        android:label="inparkmanager"
+        android:label="Find My Spot Manager"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inparkmanager/views/profile/profile.dart';
+import 'package:FindMySpot/views/profile/profile.dart';
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
@@ -82,6 +82,7 @@ class _settingState extends State<setting> {
                     children: [
                       Container(
                         height: MediaQuery.of(context).size.height/3,
+                        width: MediaQuery.of(context).size.width,
                         child: FutureBuilder(
                           future: _profileController.getUserDetails(),
                           builder: (context, snapshot) {

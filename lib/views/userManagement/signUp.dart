@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/utils/Regex/regex.dart';
-import 'package:inparkmanager/views/userManagement/signIn.dart';
+import 'package:FindMySpot/utils/Regex/regex.dart';
+import 'package:FindMySpot/views/userManagement/signIn.dart';
 
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';

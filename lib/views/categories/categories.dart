@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/constants/colors.dart';
-import 'package:inparkmanager/constants/text_strings.dart';
+import 'package:FindMySpot/constants/colors.dart';
+import 'package:FindMySpot/constants/text_strings.dart';
 
 import '../../constants/image_strings.dart';
 import '../../utils/commonWidgets/CustomBottomNavigationBarWithWallet.dart';

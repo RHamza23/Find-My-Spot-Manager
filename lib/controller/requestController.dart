@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/controller/sighnUpController.dart';
-import 'package:inparkmanager/model/requestsVehicleModel.dart';
+import 'package:FindMySpot/controller/sighnUpController.dart';
+import 'package:FindMySpot/model/requestsVehicleModel.dart';
 
 import '../constants/colors.dart';
 

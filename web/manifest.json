@@ -1,6 +1,6 @@
 {
-    "name": "inparkmanager",
-    "short_name": "inparkmanager",
+    "name": "FindMySpot",
+    "short_name": "FindMySpot",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

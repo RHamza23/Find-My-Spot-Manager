@@ -63,7 +63,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '507807311380',
     projectId: 'find-my-spot-8783e',
     storageBucket: 'find-my-spot-8783e.appspot.com',
-    iosBundleId: 'com.example.inparkmanager',
+    iosBundleId: 'com.example.FindMySpot',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -72,7 +72,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '507807311380',
     projectId: 'find-my-spot-8783e',
     storageBucket: 'find-my-spot-8783e.appspot.com',
-    iosBundleId: 'com.example.inparkmanager',
+    iosBundleId: 'com.example.FindMySpot',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(

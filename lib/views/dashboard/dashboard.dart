@@ -3,13 +3,13 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/constants/text_strings.dart';
-import 'package:inparkmanager/controller/dashboardController.dart';
-import 'package:inparkmanager/controller/updateFeeController.dart';
-import 'package:inparkmanager/model/orderScannerModel.dart';
-import 'package:inparkmanager/model/updateFeeModel.dart';
-import 'package:inparkmanager/utils/Regex/regex.dart';
-import 'package:inparkmanager/views/categories/categories.dart';
+import 'package:FindMySpot/constants/text_strings.dart';
+import 'package:FindMySpot/controller/dashboardController.dart';
+import 'package:FindMySpot/controller/updateFeeController.dart';
+import 'package:FindMySpot/model/orderScannerModel.dart';
+import 'package:FindMySpot/model/updateFeeModel.dart';
+import 'package:FindMySpot/utils/Regex/regex.dart';
+import 'package:FindMySpot/views/categories/categories.dart';
 
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
@@ -126,9 +126,9 @@ class _dashboardState extends State<dashboard> {
             padding: const EdgeInsets.only(top: 220),
             child: Align(
                 alignment: Alignment.topCenter,
-                child: InkWell(
-                    onTap: () {
-                      showModalBottomSheet(
+                child: MaterialButton(
+                  onPressed: () {
+                    showModalBottomSheet(
                         backgroundColor: Colors.white.withOpacity(1),
                         context: context,
                         isScrollControlled: true,
@@ -156,12 +156,10 @@ class _dashboardState extends State<dashboard> {
                           ),
                         ),
                       );
-                    },
-                    child: SvgPicture.asset(
-                      orderScannerButton,
-                      height: 50,
-                      width: 50,
-                    ))),
+                  },
+                  color: Colors.white,
+                  child: const Text('Click to Order'), 
+                )),
           )
         ],
       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:inparkmanager/views/categories/categories.dart';
+import 'package:FindMySpot/views/categories/categories.dart';
 
 import '../../views/wallet/wallet.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/views/wallet/wallet.dart';
+import 'package:FindMySpot/views/wallet/wallet.dart';
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
@@ -148,7 +148,24 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                       horizontalTitleGap: 0,
                       child: RadioListTile(
                         activeColor: Colors.white,
-                        title: Image.asset(creditDepitButton),
+                        title: Container(
+                          alignment: Alignment.centerLeft,
+                          width:  MediaQuery.of(context).size.width,
+                          height: 50,
+                          decoration: BoxDecoration(
+                          color: Colors.white,
+                            borderRadius: BorderRadius.circular(25),
+                            border: Border.all(width: 1, color: Colors.black)
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 15),
+                          child: const Row(
+                            children: [
+                              Icon(Icons.card_giftcard, color: PrimaryColor,),
+                              SizedBox(width: 5,),
+                              Text('Credit/Debit Card'),
+                            ],
+                          ),
+                        ),
                         value: creditDepit,
                         groupValue: depositMethod,
                         onChanged: (value) {
@@ -162,7 +179,24 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                       horizontalTitleGap: 0,
                       child: RadioListTile(
                         activeColor: Colors.white,
-                        title: Image.asset(easypaisaButton),
+                        title: Container(
+                          alignment: Alignment.centerLeft,
+                          width:  MediaQuery.of(context).size.width,
+                          height: 50,
+                          decoration: BoxDecoration(
+                          color: Colors.white,
+                            borderRadius: BorderRadius.circular(25),
+                            border: Border.all(width: 1, color: Colors.black)
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 15),
+                          child: const Row(
+                            children: [
+                              Icon(Icons.card_giftcard, color: PrimaryColor,),
+                              SizedBox(width: 5,),
+                              Text('Easypaisa'),
+                            ],
+                          ),
+                        ),
                         value: easypaisa,
                         groupValue: depositMethod,
                         onChanged: (value) {
@@ -176,7 +210,24 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                       horizontalTitleGap: 0,
                       child: RadioListTile(
                         activeColor: Colors.white,
-                        title: Image.asset(jazzcashButton),
+                        title: Container(
+                          alignment: Alignment.centerLeft,
+                          width:  MediaQuery.of(context).size.width,
+                          height: 50,
+                          decoration: BoxDecoration(
+                          color: Colors.white,
+                            borderRadius: BorderRadius.circular(25),
+                            border: Border.all(width: 1, color: Colors.black)
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 15),
+                          child: const Row(
+                            children: [
+                              Icon(Icons.card_giftcard, color: PrimaryColor,),
+                              SizedBox(width: 5,),
+                              Text('JazzCash'),
+                            ],
+                          ),
+                        ),
                         value: jazzCash,
                         groupValue: depositMethod,
                         onChanged: (value) {

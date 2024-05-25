@@ -66,6 +66,6 @@ class DefaultFirebaseOptions {
     databaseURL: 'https://inpark-5a693-default-rtdb.firebaseio.com',
     storageBucket: 'inpark-5a693.appspot.com',
     iosClientId: '595794346344-oa1qiraal07upiqhfcutecfbcnp3j03n.apps.googleusercontent.com',
-    iosBundleId: 'com.example.inparkmanager',
+    iosBundleId: 'com.example.FindMySpot',
   );
 }

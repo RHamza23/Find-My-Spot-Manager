@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:inparkmanager/constants/colors.dart';
+import 'package:FindMySpot/constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
 import '../../controller/Repositories/authentication_repository.dart';
