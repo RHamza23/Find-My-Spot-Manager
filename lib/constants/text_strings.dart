@@ -1,6 +1,6 @@
 
 // InPark
-const String inpark = "InPark";
+const String findMySpot = "Find My Spot";
 
 // -->Start of SignIn/SighnUp Texts
 const String Signup = "Sign up";

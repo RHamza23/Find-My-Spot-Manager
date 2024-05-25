@@ -24,7 +24,7 @@ class _signUpState extends State<signUp> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: const Color(0xffe4a300),
+      backgroundColor: PrimaryColor,
       body: SingleChildScrollView(
         padding: EdgeInsets.zero,
         physics: BouncingScrollPhysics(),
@@ -33,7 +33,7 @@ class _signUpState extends State<signUp> {
             Padding(
               padding: const EdgeInsets.fromLTRB(30, 40, 0, 0),
               child: headerWidget(
-                title: inpark,
+                title: findMySpot,
                 color: Colors.white, FontSize: 60,
               ),
             ),

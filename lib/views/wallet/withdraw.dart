@@ -50,7 +50,8 @@ class _withdrawMoneyState extends State<withdrawMoney> {
             width: MediaQuery.of(context).size.width,
             decoration: const BoxDecoration(),
             child: Image.asset(
-              yellowBackground,
+              blueBackground,
+              color: PrimaryColor,
             ),
           ),
           Column(
@@ -112,12 +113,12 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                         borderRadius: BorderRadius.circular(15.0),),
                       hintText: "     Rs: ",
                       hintStyle: const TextStyle(
-                        color: Colors.black,
+                        color: Colors.white,
                         fontSize: 20,
                       ),
                     ),
                     // textAlign: TextAlign.left,
-                    style: const TextStyle(fontSize: 25),
+                    style: const TextStyle(fontSize: 25, color: Colors.white),
                     keyboardType: TextInputType.number,
                   ),
                 ),
@@ -146,6 +147,7 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                     ListTileTheme(
                       horizontalTitleGap: 0,
                       child: RadioListTile(
+                        activeColor: Colors.white,
                         title: Image.asset(creditDepitButton),
                         value: creditDepit,
                         groupValue: depositMethod,
@@ -159,6 +161,7 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                     ListTileTheme(
                       horizontalTitleGap: 0,
                       child: RadioListTile(
+                        activeColor: Colors.white,
                         title: Image.asset(easypaisaButton),
                         value: easypaisa,
                         groupValue: depositMethod,
@@ -172,6 +175,7 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                     ListTileTheme(
                       horizontalTitleGap: 0,
                       child: RadioListTile(
+                        activeColor: Colors.white,
                         title: Image.asset(jazzcashButton),
                         value: jazzCash,
                         groupValue: depositMethod,

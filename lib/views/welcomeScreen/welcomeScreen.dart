@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
+import 'package:inparkmanager/constants/colors.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
 import '../getStarted/getStarted.dart';
@@ -59,7 +60,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SvgPicture.asset(
+                      Image.asset(
                           _pages[index]['image'],
                           height: 400,
                           width: 500
@@ -72,10 +73,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           ),
           Stack(
             children: [
-              SvgPicture.asset(
+               Image.asset(
                   welcomeCurve,
+                  // height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width,
-                  fit: BoxFit.cover),
+                  ),
               Positioned(
                 // The Positioned widget is used to position the text inside the Stack widget
                 // bottom: 10,
@@ -87,26 +89,26 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       children: [
                         Text(
                           _pages[currentPage]['caption'],
-                          style: TextStyle(
-
+                          style: const TextStyle(
+                            color: Colors.white,
                             fontSize: 24.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 16.0),
+                        const SizedBox(height: 16.0),
                         Text(
                           _pages[currentPage]['description'],
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 16.0,
                             color: Colors.white,
                           ),
                         ),
-                        SizedBox(height: 70.0),
+                        const SizedBox(height: 70.0),
                         SmoothPageIndicator(
                           controller: controller,
                           count: _pages.length,
-                          effect: JumpingDotEffect(
+                          effect: const JumpingDotEffect(
                               spacing: 10,
                               dotColor: Colors.grey,
                               activeDotColor: Colors.white

@@ -70,7 +70,8 @@ class _settingState extends State<setting> {
                 width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(),
                 child: Image.asset(
-                  yellowBackground,
+                  blueBackground,
+                  color: PrimaryColor,
                 ),
               ),
             ),
@@ -182,7 +183,7 @@ class _settingState extends State<setting> {
                         },
                         child: const Text(
                           'MY WALLET',
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20, color: Colors.black),
                         ),
                         style: ElevatedButton.styleFrom(
                           padding:

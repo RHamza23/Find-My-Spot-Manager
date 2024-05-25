@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:inparkmanager/constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
 import '../../controller/Repositories/authentication_repository.dart';
@@ -62,11 +63,11 @@ class _splashScreenState extends State<splashScreen> {
               height: 12,
             ),
             const Text(
-              inpark,
+              findMySpot,
               style: TextStyle(
                 fontFamily: 'Lobster',
                 fontSize: 25,
-                color: const Color(0xffe4a300),
+                color: PrimaryColor,
                 height: 0.4,
               ),
             ),

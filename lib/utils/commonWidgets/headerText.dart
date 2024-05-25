@@ -12,7 +12,7 @@ class headerWidget extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(75, 30, 75, 0),
       child: Column(
         children: [
-          Text(title, style: TextStyle(color: color , fontSize: FontSize, fontWeight: FontWeight.normal ,fontFamily: 'Lobster')),
+          Text(title, textAlign: TextAlign.center, style: TextStyle(color: color , fontSize: FontSize, fontWeight: FontWeight.normal ,fontFamily: 'Lobster')),
         ],
       ),
     );

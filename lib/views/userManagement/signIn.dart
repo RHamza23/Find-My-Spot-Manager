@@ -32,7 +32,7 @@ class _signInState extends State<signIn> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
-      backgroundColor: const Color(0xffe4a300),
+      backgroundColor: PrimaryColor,
       body: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Stack(
@@ -42,7 +42,7 @@ class _signInState extends State<signIn> {
               child: SizedBox(
                 height: 300,
                 width: 300,
-                child: Image.asset(bikeImage),
+                child: Image.asset(bikeImage, color: Colors.white,),
               ),
             ),
             Padding(

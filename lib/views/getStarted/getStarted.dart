@@ -22,7 +22,7 @@ class getStarted extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(30, 30, 0, 0),
-            child: headerWidget(title: inpark, color: PrimaryColor, FontSize: 60,),
+            child: headerWidget(title: findMySpot, color: PrimaryColor, FontSize: 60,),
           ),
           Expanded(
             child: SvgPicture.asset(
@@ -35,6 +35,7 @@ class getStarted extends StatelessWidget {
             children: [
               Image.asset(
                 getStartedCurve,
+                color: PrimaryColor,
               ),
               Positioned(
                 // The Positioned widget is used to position the text inside the Stack widget

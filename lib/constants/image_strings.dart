@@ -1,12 +1,11 @@
 
 
-const String SplashImage = "assets/images/splashimages/inparklogo.svg";
+const String SplashImage = "assets/images/splashimages/findmyspotlogo.svg";
 
-const String welcomeScreen1 = "assets/images/welcomeScreen/welcomeImage1.svg";
-const String welcomeScreen2 = "assets/images/welcomeScreen/welcomeimage2.svg";
-const String welcomeScreen3 = "assets/images/welcomeScreen/welcomeimage3.svg";
-const String welcomeCurve = "assets/images/welcomeScreen/curves.svg";
-const String welcomeCurve2 = "assets/images/welcomeScreen/curves2.png";
+const String welcomeScreen1 = "assets/images/welcomeScreen/welcome1.jpg";
+const String welcomeScreen2 = "assets/images/welcomeScreen/welcome2.jpg";
+const String welcomeScreen3 = "assets/images/welcomeScreen/welcome3.jpg";
+const String welcomeCurve = "assets/images/welcomeScreen/welcomeCurve.jpg";
 
 
 const String getStartedCurve = "assets/images/getStarted/getStartedcurve.png";
@@ -47,7 +46,7 @@ const String parkingDetailCard  = "assets/images/dashboard/parkinDetailCard.svg"
 
 //categories
 const String whiteBackground  = "assets/images/categories/commonWhiteBackground.png";
-const String yellowBackground  = "assets/images/categories/commonYellowBackground.png";
+const String blueBackground  = "assets/images/categories/commonYellowBackground.png";
 const String bikeButton  = "assets/images/categories/bikeCategoryButton.png";
 const String carButton  = "assets/images/categories/carCategoryButton.png";
 
