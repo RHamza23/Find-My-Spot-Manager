@@ -1,15 +1,15 @@
+import 'dart:developer';
+
+import 'package:FindMySpot/controller/sighnUpController.dart';
+import 'package:FindMySpot/controller/updateFeeController.dart';
+import 'package:FindMySpot/model/orderScannerModel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
-import 'package:FindMySpot/controller/sighnUpController.dart';
-import 'package:FindMySpot/controller/updateFeeController.dart';
-import 'package:FindMySpot/model/orderScannerModel.dart';
 
 import '../constants/colors.dart';
 import '../model/updateFeeModel.dart';
-import '../views/Dashboard/dashboard.dart';
 import '../views/categories/categories.dart';
 
 class dashboardController extends GetxController {
@@ -42,11 +42,9 @@ class dashboardController extends GetxController {
 
   Future<void> OrderScanner(orderScannerModel order) async {
     await _firebaseFirestore
-        .collection("Admin")
-        .doc("Scanner Order")
-        .collection(signUpController().getCurrentUserUid())
+        .collection("Scanner Orders")
         .doc(order.scannerId)
-        .set(order.toJason())
+        .set({'userId': signUpController().getCurrentUserUid(),  'scannerData': order.toJason()})
         .whenComplete(() {
       Get.snackbar("Success",
           "Your Order has been confirmed\n You will get Email of Scanner ID",
@@ -64,10 +62,8 @@ class dashboardController extends GetxController {
   Future<bool> checkScannerExists() async {
     // Check if vehicle number already exists in Firestore database
     QuerySnapshot snapshot = await FirebaseFirestore.instance
-        .collection('Admin')
-        .doc("Scanner Order")
-        .collection(signUpController().getCurrentUserUid())
-        .where('OrderStatus', isEqualTo: "Order Confirmed")
+        .collection('Scanner Orders')
+        .where('userId', isEqualTo: signUpController().getCurrentUserUid())
         .get();
 
     return snapshot.docs.isNotEmpty;
@@ -87,17 +83,13 @@ class dashboardController extends GetxController {
   Future<void> addScanner(String scannerId) async {
     updateFeeModel fee = updateFeeModel(bike: "0", car: "0");
 
-    final CollectionReference scannerRef = FirebaseFirestore.instance
-        .collection('Admin')
-        .doc("Scanner Order")
-        .collection(signUpController().getCurrentUserUid().toString());
+    final CollectionReference scannerRef = FirebaseFirestore.instance.collection('Scanner Orders');
     final DocumentSnapshot cardSnapshot = await scannerRef.doc(scannerId).get();
-
     if (cardSnapshot.exists) {
       final Map<String, dynamic>? data =
           cardSnapshot.data() as Map<String, dynamic>?;
 
-      if (data?['ScannerId'] == scannerId) {
+      if (data?['scannerData']['scanner_id'] == scannerId) {
         final DocumentReference cardsRef = FirebaseFirestore.instance
             .collection('Parking Manager')
             .doc(signUpController().getCurrentUserUid().toString())

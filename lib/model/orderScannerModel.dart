@@ -20,12 +20,12 @@ class orderScannerModel {
 
   toJason() {
     return {
-      "ScannerId": scannerId,
-      "PhoneNumber": phoneNo,
-      "ShipmentAddress": shipAddress,
-      "ImplementedAddress": implementedlocation,
-      "PaymentMethod": paymentMethod,
-      "OrderStatus": orderStatus,
+      "scanner_id": scannerId,
+      "phone_number": phoneNo,
+      "shipment_address": shipAddress,
+      "implemented_address": implementedlocation,
+      "payment_method": paymentMethod,
+      "order_status": orderStatus,
 
     };
   }
