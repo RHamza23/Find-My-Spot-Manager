@@ -1,3 +1,4 @@
+import 'package:FindMySpot/views/scanner/scanner_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:FindMySpot/constants/colors.dart';
@@ -72,9 +73,17 @@ class _categoriesState extends State<categories> {
                   },
                   child: Image.asset(bikeButton),
                 ),
+                Container(
+            margin: const EdgeInsets.only(top: 25),
+            child: MaterialButton(
+            color: PrimaryColor,
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ScannerScreen())), 
+            child: const Text('NFC Scanning mode', style: TextStyle(color: Colors.white),),),
+          )
               ],
             ),
           ),
+          
 
         ],
       ),

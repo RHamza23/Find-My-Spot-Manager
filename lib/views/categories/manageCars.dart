@@ -5,7 +5,6 @@ import 'package:table_calendar/table_calendar.dart';
 
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
-import '../../constants/text_strings.dart';
 import '../../controller/manageVehicleController.dart';
 import '../../utils/commonWidgets/CustomBottomNavigationBarWithWallet.dart';
 import '../../utils/commonWidgets/FloatingactionButtonWithNotched.dart';

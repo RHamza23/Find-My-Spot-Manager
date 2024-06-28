@@ -1,8 +1,6 @@
+import 'package:FindMySpot/model/updateFeeModel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:FindMySpot/model/updateFeeModel.dart';
-import 'package:FindMySpot/utils/Regex/regex.dart';
 
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';

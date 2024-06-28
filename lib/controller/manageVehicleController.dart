@@ -81,7 +81,6 @@ class manageVehicleController extends GetxController {
       snapshot.docs.map((e) => manageVehicleModel.fromSnapshot(e)).toList();
       return userdata;
     }else if(selectedDate == null){
-
       final snapshot = await _firebaseFirestore
           .collection('Parking Manager')
           .doc(signUpController().getCurrentUserUid())
