@@ -25,18 +25,20 @@ Widget CustomNavigationBar1() {
               onPressed: () {
                 Get.to(categories());
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.home_outlined,
                 size: 30,
+                color: Colors.white,
               ),
             ),
             IconButton(
               onPressed: () {
                 Get.to(wallet());
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.account_balance_wallet_outlined,
                 size: 30,
+                color: Colors.white,
               ),
             ),
           ],

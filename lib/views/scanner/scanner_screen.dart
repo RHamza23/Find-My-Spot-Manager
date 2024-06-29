@@ -1,5 +1,7 @@
+import 'package:FindMySpot/constants/image_strings.dart';
 import 'package:FindMySpot/controller/scanner_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class ScannerScreen extends StatefulWidget {
   const ScannerScreen({super.key});
@@ -19,7 +21,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Testing NFC Scanning...',
+            'Card Scanner',
           ),
           centerTitle: true,
         ),
@@ -32,12 +34,18 @@ class _ScannerScreenState extends State<ScannerScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                ElevatedButton(
-                  onPressed: () => {},
-                  child: const Text(
-                    'Start Scanning',
-                  ),
-                ),
+                SvgPicture.asset(
+                SplashImage,
+                width: 200,
+                height: 200,
+              ),
+              Text('Scan your card', style: TextStyle(color:Colors.black, fontSize: 30),)
+                // ElevatedButton(
+                //   onPressed: () => {},
+                //   child: const Text(
+                //     'Start Scanning',
+                //   ),
+                // ),
               ],
             ),
           ),

@@ -221,6 +221,7 @@ class _manageBikesState extends State<manageBikes> {
                                               style: const TextStyle(
                                                 fontFamily: 'Roboto',
                                                 fontSize: 25,
+                                                color: Colors.white
                                               ),
                                             ),
                                             Text(
@@ -228,6 +229,7 @@ class _manageBikesState extends State<manageBikes> {
                                               style: const TextStyle(
                                                 fontFamily: 'Roboto',
                                                 fontSize: 20,
+                                                color: Colors.white
                                               ),
                                             ),
                                           ],
@@ -259,6 +261,7 @@ class _manageBikesState extends State<manageBikes> {
                                               style: const TextStyle(
                                                 fontFamily: 'Roboto',
                                                 fontSize: 15,
+                                                color: Colors.white
                                               ),
                                             ),
                                             Text(
@@ -266,6 +269,7 @@ class _manageBikesState extends State<manageBikes> {
                                               style: const TextStyle(
                                                 fontFamily: 'Roboto',
                                                 fontSize: 15,
+                                                color: Colors.white
                                               ),
                                             ),
                                             const SizedBox(height: 5),
@@ -276,6 +280,7 @@ class _manageBikesState extends State<manageBikes> {
                                                 style: const TextStyle(
                                                   fontFamily: 'Roboto',
                                                   fontSize: 15,
+                                                  color: Colors.white
                                                 ),
                                               ),
                                             ),

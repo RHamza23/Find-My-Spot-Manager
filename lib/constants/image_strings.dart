@@ -26,6 +26,7 @@ const String profileIcon = "assets/images/icons/profile.svg";
 const String personIcon = "assets/images/icons/person.svg";
 const String personpngIcon = "assets/images/icons/personpng.png";
 const String walletIcon = "assets/images/icons/wallet.svg";
+const String cardScanning = "assets/images/icons/card-scanning.png";
 
 
 // deposit screen button
