@@ -45,7 +45,7 @@ class _walletState extends State<wallet> {
         ),
       ),
       extendBody: true,
-      bottomNavigationBar: CustomNavigationBar1(),
+      bottomNavigationBar: CustomNavigationBar1(null),
       body: Stack(
         children: [
           Padding(
@@ -97,7 +97,7 @@ class _walletState extends State<wallet> {
                             ),
                           ),
                           const SizedBox(
-                            height: 50,
+                            height: 80,
                           ),
                           Container(
                             height: 126,

@@ -1,17 +1,15 @@
+import 'package:FindMySpot/views/profile/profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:FindMySpot/views/profile/profile.dart';
+
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
-import '../../constants/text_strings.dart';
 import '../../controller/profileController.dart';
 import '../../model/UserModel.dart';
 import '../../utils/commonWidgets/CustomBottomNavigationBarWithWallet.dart';
 import '../../utils/commonWidgets/FloatingactionButtonWithNotched.dart';
-import '../../utils/commonWidgets/headerWidget.dart';
 import '../requests/requests.dart';
 import '../updateFee/updateFee.dart';
 import '../userManagement/signIn.dart';
@@ -41,7 +39,7 @@ class _settingState extends State<setting> {
     profileController _profileController = Get.put(profileController());
 
     return Scaffold(
-        bottomNavigationBar: CustomNavigationBar1(),
+        bottomNavigationBar: CustomNavigationBar1(true),
         floatingActionButtonLocation:
         FloatingActionButtonLocation.miniCenterDocked,
         floatingActionButton:

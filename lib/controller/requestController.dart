@@ -41,7 +41,7 @@ class requestController extends GetxController {
         .catchError((error) => {Get.snackbar(error, "Something went wrong. Try Again",
     snackPosition: SnackPosition.BOTTOM,
     backgroundColor: PrimaryColor,
-    colorText: Colors.black)});
+    colorText: Colors.white)});
   }
 
 

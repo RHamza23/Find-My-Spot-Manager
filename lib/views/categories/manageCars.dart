@@ -52,7 +52,7 @@ class _manageCarsState extends State<manageCars> {
       ),
       extendBodyBehindAppBar: true,
       extendBody: true,
-      bottomNavigationBar: CustomNavigationBar1(),
+      bottomNavigationBar: CustomNavigationBar1(null),
       floatingActionButtonLocation:
           FloatingActionButtonLocation.miniCenterDocked,
       floatingActionButton: FloatingActionButtonWithNotched(),
@@ -85,8 +85,8 @@ class _manageCarsState extends State<manageCars> {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 50,
+              const SizedBox(
+                height: 75,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -100,10 +100,10 @@ class _manageCarsState extends State<manageCars> {
                     ),
                     prefixInsets: const EdgeInsets.symmetric(horizontal: 20),
                     placeholder: "Search...",
-                    placeholderStyle: const TextStyle(color: Colors.black),
+                    placeholderStyle: const TextStyle(color: Colors.white),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20.0),
-                      color: PrimaryColor,
+                      color: Colors.grey[400],
                     ),
                     controller: _searchController,
                   ),
@@ -225,6 +225,7 @@ class _manageCarsState extends State<manageCars> {
                                                 style: const TextStyle(
                                                   fontFamily: 'Roboto',
                                                   fontSize: 25,
+                                                  color: Colors.white
                                                 ),
                                               ),
                                               Text(
@@ -232,6 +233,7 @@ class _manageCarsState extends State<manageCars> {
                                                 style: const TextStyle(
                                                   fontFamily: 'Roboto',
                                                   fontSize: 20,
+                                                  color: Colors.white
                                                 ),
                                               ),
                                             ],
@@ -263,6 +265,7 @@ class _manageCarsState extends State<manageCars> {
                                                 style: const TextStyle(
                                                   fontFamily: 'Roboto',
                                                   fontSize: 15,
+                                                  color: Colors.white
                                                 ),
                                               ),
                                               Text(
@@ -270,6 +273,7 @@ class _manageCarsState extends State<manageCars> {
                                                 style: const TextStyle(
                                                   fontFamily: 'Roboto',
                                                   fontSize: 15,
+                                                  color: Colors.white
                                                 ),
                                               ),
                                               const SizedBox(height: 5),
@@ -280,6 +284,7 @@ class _manageCarsState extends State<manageCars> {
                                                   style: const TextStyle(
                                                     fontFamily: 'Roboto',
                                                     fontSize: 15,
+                                                    color: Colors.white
                                                   ),
                                                 ),
                                               ),

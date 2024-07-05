@@ -22,12 +22,12 @@ class updateFeeController extends GetxController {
       Get.snackbar("Success", "Kindly Update your Fee in Account Setting",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black);
+          colorText: Colors.white);
     }).catchError((error, stackTrace) {
       Get.snackbar("Error", "Something went wrong. Try Again",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black);
+          colorText: Colors.white);
     });
   }
 
@@ -64,7 +64,7 @@ class updateFeeController extends GetxController {
               Get.snackbar("Success", "Your Fee has been updated",
                   snackPosition: SnackPosition.BOTTOM,
                   backgroundColor: PrimaryColor,
-                  colorText: Colors.black)
+                  colorText: Colors.white)
             });
   }
 }

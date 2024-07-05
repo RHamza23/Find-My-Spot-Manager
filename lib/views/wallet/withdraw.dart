@@ -268,7 +268,7 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                           Get.snackbar("Error", "You don't have enough balance in You wallet",
                               snackPosition: SnackPosition.BOTTOM,
                               backgroundColor: PrimaryColor,
-                              colorText: Colors.black);
+                              colorText: Colors.white);
                         } else {
                           // Perform the withdrawal logic here
                           controller.withdrawtMoney(withdraw).then((value) => {
@@ -284,7 +284,7 @@ class _withdrawMoneyState extends State<withdrawMoney> {
                             "Please Select an Option and Enter some Text",
                             snackPosition: SnackPosition.BOTTOM,
                             backgroundColor: PrimaryColor,
-                            colorText: Colors.black);
+                            colorText: Colors.white);
                       }
                     },
                     child: const Text(

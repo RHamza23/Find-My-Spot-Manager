@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
+import 'package:FindMySpot/controller/requestController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:FindMySpot/controller/requestController.dart';
+
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
-import '../../model/requestsVehicleModel.dart';
 import '../../utils/commonWidgets/CustomBottomNavigationBarWithWallet.dart';
 import '../../utils/commonWidgets/FloatingactionButtonWithNotched.dart';
 
@@ -37,7 +36,7 @@ class _vehicleRequestsState extends State<vehicleRequests> {
       ),
       extendBodyBehindAppBar: true,
       extendBody: true,
-      bottomNavigationBar: CustomNavigationBar1(),
+      bottomNavigationBar: CustomNavigationBar1(null),
       floatingActionButtonLocation:
           FloatingActionButtonLocation.miniCenterDocked,
       floatingActionButton: FloatingActionButtonWithNotched(),

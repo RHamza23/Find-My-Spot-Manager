@@ -16,6 +16,12 @@ class _ScannerScreenState extends State<ScannerScreen> {
     ScannerController.startNFCService();
     super.initState();
   }
+
+  @override
+  void dispose() {
+    ScannerController.stopNFCService();
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

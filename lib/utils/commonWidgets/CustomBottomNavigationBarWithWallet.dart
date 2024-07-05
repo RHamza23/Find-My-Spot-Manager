@@ -1,3 +1,4 @@
+import 'package:FindMySpot/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -6,9 +7,9 @@ import 'package:FindMySpot/views/categories/categories.dart';
 import '../../views/wallet/wallet.dart';
 
 
-Widget CustomNavigationBar1() {
+Widget CustomNavigationBar1(bool? isSettingScreen) {
   return BottomAppBar(
-    color: Colors.transparent,
+    color: isSettingScreen != null && isSettingScreen ? PrimaryColor :  Colors.transparent,
     elevation: 0,
     notchMargin: 0.05,
     clipBehavior: Clip.antiAlias,

@@ -17,7 +17,7 @@ const String bikeImage = "assets/images/userManagment/bike.png";
 
 // Dashboard
 const String dashboardBackground = "assets/images/dashboard/dashboardBackground.jpg";
-const String orderScannerButton = "assets/images/dashboard/orderCardButton.svg";
+const String orderScannerButton = "assets/images/dashboard/orderScanner.png";
 
 // Icons Paths
 
@@ -48,8 +48,9 @@ const String parkingDetailCard  = "assets/images/dashboard/parkinDetailCard.svg"
 //categories
 const String whiteBackground  = "assets/images/categories/commonWhiteBackground.png";
 const String blueBackground  = "assets/images/categories/commonYellowBackground.png";
-const String bikeButton  = "assets/images/categories/bikeCategoryButton.jpg";
-const String carButton  = "assets/images/categories/carCategoryButton.jpg";
+const String bikeButton  = "assets/images/categories/bikeDetails.jpg";
+const String carButton  = "assets/images/categories/carDetails.jpg";
+const String nfcButton  = "assets/images/categories/nfcScanningCard.jpg";
 
 // Manage Car
 const String filterButton  = "assets/images/manageVehicles/filterButton.png";

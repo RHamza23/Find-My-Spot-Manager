@@ -52,13 +52,13 @@ class  signUpController extends GetxController{
             () => Get.snackbar("Success", "Your account has been created",
             snackPosition: SnackPosition.BOTTOM,
             backgroundColor: PrimaryColor,
-            colorText: Colors.black
+            colorText: Colors.white
         )
     ).catchError((error, stackTrace){
       Get.snackbar("Error", "Something went wrong. Try Again",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black
+          colorText: Colors.white
       );
     });
   }

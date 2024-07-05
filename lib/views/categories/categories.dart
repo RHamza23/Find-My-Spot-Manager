@@ -24,7 +24,7 @@ class _categoriesState extends State<categories> {
       resizeToAvoidBottomInset: false,
       extendBodyBehindAppBar: true,
       extendBody: true,
-      bottomNavigationBar: CustomNavigationBar1(),
+      bottomNavigationBar: CustomNavigationBar1(null),
       floatingActionButtonLocation:
       FloatingActionButtonLocation.miniCenterDocked,
       floatingActionButton:
@@ -45,6 +45,7 @@ class _categoriesState extends State<categories> {
               ),
             ),
           ),
+
           Padding(
             padding: const EdgeInsets.only(top: 80),
             child: Container(
@@ -56,30 +57,32 @@ class _categoriesState extends State<categories> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(30, 0, 10, 0),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            padding: const EdgeInsets.fromLTRB(30, 59, 10, 0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 InkWell(
                   onTap: () {
                   Get.to(const manageCars());
                   },
-                  child: Image.asset(carButton),
+                  child: Image.asset(carButton, height: 170,),
                 ),
+                const SizedBox(height: 10,),
+
                 InkWell(
                   onTap: () {
                     Get.to( manageBikes());
                   },
-                  child: Image.asset(bikeButton),
+                  child: Image.asset(bikeButton, height: 190,),
                 ),
-                Container(
-            margin: const EdgeInsets.only(top: 25),
-            child: MaterialButton(
-            color: PrimaryColor,
-            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ScannerScreen())), 
-            child: const Text('NFC Scanning mode', style: TextStyle(color: Colors.white),),),
-          )
+                const SizedBox(height: 10,),
+                InkWell(
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ScannerScreen())),
+                  child: Image.asset(nfcButton, height: 190,),
+                ),
               ],
             ),
           ),

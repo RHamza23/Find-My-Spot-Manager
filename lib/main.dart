@@ -1,11 +1,10 @@
+import 'package:FindMySpot/views/splash_Screens/SplashScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:FindMySpot/views/splash_Screens/SplashScreen.dart';
 
-import 'controller/Repositories/authentication_repository.dart';
 import 'firebase_options_old.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

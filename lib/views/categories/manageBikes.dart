@@ -53,7 +53,7 @@ class _manageBikesState extends State<manageBikes> {
       ),
       extendBodyBehindAppBar: true,
       extendBody: true,
-      bottomNavigationBar: CustomNavigationBar1(),
+      bottomNavigationBar: CustomNavigationBar1(null),
       floatingActionButtonLocation:
       FloatingActionButtonLocation.miniCenterDocked,
       floatingActionButton: FloatingActionButtonWithNotched(),
@@ -87,7 +87,7 @@ class _manageBikesState extends State<manageBikes> {
                 ),
               ),
               const SizedBox(
-                height: 50,
+                height: 75,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -101,10 +101,10 @@ class _manageBikesState extends State<manageBikes> {
                     ),
                     prefixInsets: const EdgeInsets.symmetric(horizontal: 20),
                     placeholder: "Search...",
-                    placeholderStyle: const TextStyle(color: Colors.black),
+                    placeholderStyle: const TextStyle(color: Colors.white),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20.0),
-                      color: PrimaryColor,
+                      color: Colors.grey[400],
                     ),
                     controller: _searchController,
                   ),
@@ -183,7 +183,7 @@ class _manageBikesState extends State<manageBikes> {
               ),
               const SizedBox(height: 20,),
               Container(
-                height: 350,
+                height: MediaQuery.of(context).size.height / 2,
                 width: MediaQuery.of(context).size.width,
                 child: SingleChildScrollView(
                   physics: const BouncingScrollPhysics(),

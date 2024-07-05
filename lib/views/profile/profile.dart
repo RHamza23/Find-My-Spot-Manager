@@ -1,11 +1,11 @@
 import 'dart:io';
 
+import 'package:FindMySpot/utils/Regex/regex.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:FindMySpot/utils/Regex/regex.dart';
+
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
 import '../../constants/text_strings.dart';
@@ -14,7 +14,6 @@ import '../../controller/sighnUpController.dart';
 import '../../model/UserModel.dart';
 import '../../model/orderScannerModel.dart';
 import '../../utils/commonWidgets/CustomtextField.dart';
-import '../../utils/commonWidgets/headerText.dart';
 
 class profile extends StatefulWidget {
   const profile({Key? key}) : super(key: key);

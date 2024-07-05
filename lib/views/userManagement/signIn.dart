@@ -122,7 +122,7 @@ class _signInState extends State<signIn> {
                                               "Success", "Login Successfully",
                                               snackPosition: SnackPosition.BOTTOM,
                                               backgroundColor: PrimaryColor,
-                                              colorText: Colors.black),
+                                              colorText: Colors.white),
                                           if(await _dashboardController.checkScannerExistInManagerAccount() == false){
                                             Get.to(const dashboard())
                                           }else{
@@ -135,7 +135,7 @@ class _signInState extends State<signIn> {
                                               "Failed", "User does not exist",
                                               snackPosition: SnackPosition.BOTTOM,
                                               backgroundColor: PrimaryColor,
-                                              colorText: Colors.black)
+                                              colorText: Colors.white)
                                         }
                                     });
                                   }

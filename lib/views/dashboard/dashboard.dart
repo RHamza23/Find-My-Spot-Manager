@@ -1,15 +1,11 @@
 import 'dart:math';
 
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:get/get.dart';
 import 'package:FindMySpot/constants/text_strings.dart';
 import 'package:FindMySpot/controller/dashboardController.dart';
-import 'package:FindMySpot/controller/updateFeeController.dart';
 import 'package:FindMySpot/model/orderScannerModel.dart';
-import 'package:FindMySpot/model/updateFeeModel.dart';
 import 'package:FindMySpot/utils/Regex/regex.dart';
-import 'package:FindMySpot/views/categories/categories.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../constants/colors.dart';
 import '../../constants/image_strings.dart';
@@ -124,11 +120,11 @@ class _dashboardState extends State<dashboard> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 220),
+            padding: const EdgeInsets.only(top: 250),
             child: Align(
                 alignment: Alignment.topCenter,
-                child: MaterialButton(
-                  onPressed: () {
+                child: InkWell(
+                  onTap: () {
                     showModalBottomSheet(
                         backgroundColor: Colors.white.withOpacity(1),
                         context: context,
@@ -146,7 +142,7 @@ class _dashboardState extends State<dashboard> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  const Text(orderYourScanner,
+                                  const Text(orderScannerButton,
                                       style: TextStyle(
                                           fontSize: 30,
                                           fontWeight: FontWeight.bold)),
@@ -158,8 +154,7 @@ class _dashboardState extends State<dashboard> {
                         ),
                       );
                   },
-                  color: Colors.white,
-                  child: const Text('Click to Order'), 
+                  child: Image.asset(orderScannerButton, width: 180,), 
                 )),
           )
         ],
@@ -283,7 +278,7 @@ class _dashboardState extends State<dashboard> {
                       Get.snackbar("Error", "You Already Order your Scanner",
                           snackPosition: SnackPosition.BOTTOM,
                           backgroundColor: PrimaryColor,
-                          colorText: Colors.black);
+                          colorText: Colors.white);
                     }
 
                   }

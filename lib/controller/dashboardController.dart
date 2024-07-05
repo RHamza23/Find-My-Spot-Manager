@@ -50,12 +50,12 @@ class dashboardController extends GetxController {
           "Your Order has been confirmed\n You will get Email of Scanner ID",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black);
+          colorText: Colors.white);
     }).catchError((error, stackTrace) {
       Get.snackbar("Error", "Something went wrong. Try Again",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black);
+          colorText: Colors.white);
     });
   }
 
@@ -101,7 +101,7 @@ class dashboardController extends GetxController {
                   "Your Scanner has been successfully added to your account",
                   snackPosition: SnackPosition.BOTTOM,
                   backgroundColor: PrimaryColor,
-                  colorText: Colors.black),
+                  colorText: Colors.white),
                   _updateFeeController.updateFee(fee),
                   Get.to(categories()),
         }); // use ! to assert that data is not null
@@ -109,13 +109,13 @@ class dashboardController extends GetxController {
         Get.snackbar("Error", "This Scanner does not exist",
             snackPosition: SnackPosition.BOTTOM,
             backgroundColor: PrimaryColor,
-            colorText: Colors.black);
+            colorText: Colors.white);
       }
     } else {
       Get.snackbar("Error", "Wrong Scanner Id",
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: PrimaryColor,
-          colorText: Colors.black);
+          colorText: Colors.white);
     }
     // wallet balance is also creating when user is adding its scanner
     final DocumentReference userDoc = FirebaseFirestore.instance
@@ -148,7 +148,7 @@ class dashboardController extends GetxController {
         Get.snackbar("Error", "You don't have enough balance",
             snackPosition: SnackPosition.BOTTOM,
             backgroundColor: PrimaryColor,
-            colorText: Colors.black);
+            colorText: Colors.white);
 
         return;
       }
